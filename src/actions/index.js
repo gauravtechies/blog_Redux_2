@@ -8,7 +8,7 @@ import jsonPlaceholder from '../apis/jsonPLaceholder'
 // }
 
 // we can short upper like
-export const  fetchPosts =async () => async dispatch=>{
+export const  fetchPosts = () => async dispatch=>{
         const response= await jsonPlaceholder.get('/posts');
         dispatch({ type:'FETCH_POSTS',payload:response })
     }
